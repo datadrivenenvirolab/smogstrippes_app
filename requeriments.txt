@@ -3,4 +3,3 @@ plotly
 ggtext
 readr
 bslib
-ggplot2
