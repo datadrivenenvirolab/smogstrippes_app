@@ -8,7 +8,7 @@
 library(shiny)
 library(plotly)
 library(ggtext)
-library(readr)
+# library(readr)
 library(bslib)
 
 df_plot_long <- read.csv('https://raw.githubusercontent.com/datadrivenenvirolab/smogstrippes_web/main/data/data_shiny.csv')
