@@ -11,7 +11,7 @@ library(ggtext)
 # library(readr)
 library(bslib)
 
-df_plot_long <- read.csv('https://raw.githubusercontent.com/datadrivenenvirolab/smogstrippes_web/main/data/data_shiny.csv')
+df_plot_long <- read.csv('data/data_shiny.csv')
 
 df_plot_long$who_val <-   factor(df_plot_long$who_val,
                                                   levels = c ("Within Recommended Value of 5µg/m^3",
