@@ -2,3 +2,4 @@ shiny
 plotly
 ggtext
 bslib
+readr
