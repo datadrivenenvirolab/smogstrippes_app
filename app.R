@@ -8,7 +8,7 @@
 library(shiny)
 library(plotly)
 library(ggtext)
-# library(readr)
+library(readr)
 library(bslib)
 
 df_plot_long <- read_csv('data/data_shiny.csv')
