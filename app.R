@@ -11,27 +11,27 @@ library(ggtext)
 library(readr)
 library(bslib)
 
-df_plot_long <- read_csv('data/data_shiny.csv')
+df_plot_long <- read.csv('GitHub/smogstrippes_app/data/data_shiny.csv')
 
 df_plot_long$who_val <-   factor(df_plot_long$who_val,
-                                                  levels = c ("Within Recommended Value of 5µg/m^3",
-                                                              "Within Recommended Value of 10µg/m^3",
-                                                              "Within WHO Interim Target 4 of 10µg/m^3",
-                                                              "Within WHO Interim Target 3 of 15µg/m^3",
-                                                              "Within WHO Interim Target 2 of 25µg/m^3",
-                                                              "Within WHO Interim Target 1 of 35µg/m^3",
+                                                  levels = c ("Within Recommended Value of 5ug/m^3",
+                                                              "Within Recommended Value of 10ug/m^3",
+                                                              "Within WHO Interim Target 4 of 10ug/m^3",
+                                                              "Within WHO Interim Target 3 of 15ug/m^3",
+                                                              "Within WHO Interim Target 2 of 25ug/m^3",
+                                                              "Within WHO Interim Target 1 of 35ug/m^3",
                                                               "Exceeding All Recommended Guidelines & Targets"))
 
-who_palette_2021 <- c("Within Recommended Value of 5µg/m^3"= "#00E400", 
-                      "Within WHO Interim Target 4 of 10µg/m^3" = "#FB6A4A", 
-                      "Within WHO Interim Target 3 of 15µg/m^3"="#EF3B2C", 
-                      "Within WHO Interim Target 2 of 25µg/m^3" = "#CB181D", 
-                      "Within WHO Interim Target 1 of 35µg/m^3" = "#A50F15", 
+who_palette_2021 <- c("Within Recommended Value of 5ug/m^3"= "#00E400", 
+                      "Within WHO Interim Target 4 of 10ug/m^3" = "#FB6A4A", 
+                      "Within WHO Interim Target 3 of 15ug/m^3"="#EF3B2C", 
+                      "Within WHO Interim Target 2 of 25ug/m^3" = "#CB181D", 
+                      "Within WHO Interim Target 1 of 35ug/m^3" = "#A50F15", 
                       "Exceeding All Recommended Guidelines & Targets" = "#67000D")
-who_palette_2005 <- c("Within Recommended Value of 10µg/m^3" = "#00E400",            
-                      "Within WHO Interim Target 3 of 15µg/m^3" = "#EF3B2C", 
-                      "Within WHO Interim Target 2 of 25µg/m^3" = "#CB181D", 
-                      "Within WHO Interim Target 1 of 35µg/m^3" = "#A50F15", 
+who_palette_2005 <- c("Within Recommended Value of 10ug/m^3" = "#00E400",            
+                      "Within WHO Interim Target 3 of 15ug/m^3" = "#EF3B2C", 
+                      "Within WHO Interim Target 2 of 25ug/m^3" = "#CB181D", 
+                      "Within WHO Interim Target 1 of 35ug/m^3" = "#A50F15", 
                       "Exceeding All Recommended Guidelines & Targets" ="#67000D")
 
 
