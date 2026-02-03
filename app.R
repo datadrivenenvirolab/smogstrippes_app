@@ -8,10 +8,9 @@
 library(shiny)
 library(plotly)
 library(ggtext)
-library(readr)
 library(bslib)
 
-df_plot_long <- read.csv('GitHub/smogstrippes_app/data/data_shiny.csv')
+df_plot_long <- read.csv('data/data_shiny.csv')
 
 df_plot_long$who_val <-   factor(df_plot_long$who_val,
                                                   levels = c ("Within Recommended Value of 5ug/m^3",
