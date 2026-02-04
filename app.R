@@ -83,7 +83,7 @@ server <- function(input, output) {
             axis.title = element_blank(),
             panel.grid.major = element_blank(),
             legend.title = element_blank(),
-            legend.position = 'top',
+            legend.position = 'bottom',
             legend.box = "horizontal",
             #axis.text.x = element_text(vjust = 3),
             axis.text.x = element_blank(),
